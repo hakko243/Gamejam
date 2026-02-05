@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ctkr2rpugna45"]
+
+[ext_resource type="Script" uid="uid://cjq8obt0lkgtm" path="res://bgm.gd" id="1_q8d6t"]
+[ext_resource type="AudioStream" uid="uid://bv2nymyn4amcm" path="res://aset/orison.mp3" id="2_74htj"]
+
+[node name="Bgm" type="Node2D" unique_id=1780681684]
+script = ExtResource("1_q8d6t")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=573691763]
+stream = ExtResource("2_74htj")
+volume_db = 10.0

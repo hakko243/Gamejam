@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cikvql2ut31xn"]
+
+[ext_resource type="Texture2D" uid="uid://cpdfk4x832vb0" path="res://aset/Taman.png" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://bea3yv2pucrdh" path="res://game.gd" id="1_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://ctkr2rpugna45" path="res://BGM.tscn" id="3_feb5d"]
+[ext_resource type="AudioStream" uid="uid://bv2nymyn4amcm" path="res://aset/orison.mp3" id="4_fc0e3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwb40"]
+size = Vector2(24, 654)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_80nbo"]
+size = Vector2(20, 667)
+
+[node name="Node2D" type="Node2D" unique_id=745396702]
+script = ExtResource("1_e2o6t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=919422193]
+position = Vector2(576, 327)
+scale = Vector2(0.4, 0.8916667)
+texture = ExtResource("1_80nbo")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1962678290]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=739254945]
+position = Vector2(2, 317)
+shape = SubResource("RectangleShape2D_mwb40")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=835377702]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=337693494]
+position = Vector2(1161, 313)
+shape = SubResource("RectangleShape2D_80nbo")
+
+[node name="Bgm" parent="." unique_id=1780681684 instance=ExtResource("3_feb5d")]
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="Bgm" unique_id=408887793]
+stream = ExtResource("4_fc0e3")
+volume_db = 10.0
