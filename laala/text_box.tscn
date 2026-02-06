@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bfpv3ylwpp2ow"]
+
+[ext_resource type="Texture2D" uid="uid://ct474y0eb7lpa" path="res://aset/Chatbox.png" id="1_k7ve7"]
+
+[node name="TextBox" type="MarginContainer" unique_id=393118263]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -629.0
+offset_top = 112.0
+offset_right = -373.0
+offset_bottom = 368.0
+grow_horizontal = 0
+size_flags_horizontal = 6
+size_flags_vertical = 3
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1046272228]
+layout_mode = 2
+texture = ExtResource("1_k7ve7")
+region_rect = Rect2(0, 0, 400, 400)
+patch_margin_left = 128
+patch_margin_top = 144
+patch_margin_right = 128
+patch_margin_bottom = 112

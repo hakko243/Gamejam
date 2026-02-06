@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cpdfk4x832vb0" path="res://aset/Taman.png" id="1_80nbo"]
 [ext_resource type="Script" uid="uid://bea3yv2pucrdh" path="res://game.gd" id="1_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://dmaogqfa8j5i6" path="res://Player.tscn" id="2_7jktm"]
 [ext_resource type="PackedScene" uid="uid://ctkr2rpugna45" path="res://BGM.tscn" id="3_feb5d"]
 [ext_resource type="AudioStream" uid="uid://bv2nymyn4amcm" path="res://aset/orison.mp3" id="4_fc0e3"]
 
@@ -13,6 +14,10 @@ size = Vector2(20, 667)
 
 [node name="Node2D" type="Node2D" unique_id=745396702]
 script = ExtResource("1_e2o6t")
+
+[node name="CharacterBody2D" parent="." unique_id=107535429 instance=ExtResource("2_7jktm")]
+top_level = true
+position = Vector2(79, 495)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=919422193]
 position = Vector2(576, 327)
