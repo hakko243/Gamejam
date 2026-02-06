@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://tp2bmxwfbvss"]
+
+[ext_resource type="Script" uid="uid://rxr26jhmbpjn" path="res://opening.gd" id="1_eupmi"]
+
+[node name="➡️ OpeningScene" type="CanvasLayer" unique_id=725844796]
+script = ExtResource("1_eupmi")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1756915395]
+offset_right = 1156.0
+offset_bottom = 638.0
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect" unique_id=106483976]
+layout_mode = 0
+offset_right = 1142.0
+offset_bottom = 641.0
+text = "⚠ SPOILER ALERT ⚠
+
+Cerita ini bukan tentang kenyataan.
+Tidak semua yang terlihat itu benar.
+
+Senja selalu datang...
+Tapi senja itu tidak nyata.
+"
+horizontal_alignment = 1
+vertical_alignment = 1

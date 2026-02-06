@@ -9,3 +9,4 @@ script = ExtResource("1_q8d6t")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=573691763]
 stream = ExtResource("2_74htj")
 volume_db = 10.0
+stream_paused = true

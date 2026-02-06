@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="laala"
-run/main_scene="uid://cikvql2ut31xn"
+run/main_scene="uid://tp2bmxwfbvss"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SceneManager="*uid://w2l8wk4khr78"
 
 [physics]
 
